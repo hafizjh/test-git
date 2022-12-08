@@ -12,3 +12,9 @@ jobs:
         run: | #pipe text means to run multiple command
           node -v
           npm -v
+      - name: Python Command
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python
